@@ -3,11 +3,11 @@ adb
 1. 使用genymotion安装一个应用；
 adb install packagename
 在虚拟机上安装qq、微信等常见应用时，出现错误。
-![](https://raw.githubusercontent.com/TestSix/yuwei/blob/master/homework01/adb1.PNG)
+![](https://raw.githubusercontent.com/TestSix/yuwei/master/homework01/adb1.PNG)
 
 2. 查看应用的package name；
 /data/data/目录下查看文件夹名，这里存放了已安装的app
-![](https://raw.githubusercontent.com/TestSix/yuwei/blob/master/homework01/adb2-1.PNG)
+![](https://raw.githubusercontent.com/TestSix/yuwei/master/homework01/adb2-1.PNG)
 
 启动app，通过ps，查看进程，进程名也是packagename
 ![](https://raw.githubusercontent.com/TestSix/yuwei/blob/master/homework01/adb2-2.PNG)
