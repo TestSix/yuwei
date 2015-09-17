@@ -31,3 +31,5 @@ https://testerhome.com/topics/878
 
 参考：
 https://github.com/vigossjjj/CrashMonkey4IOS
+
+Monkey：很赞啊。不过切换应用的时候可以加上`--pct-appswitch`。其他都ok
