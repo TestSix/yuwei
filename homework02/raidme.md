@@ -9,17 +9,24 @@
 - ``adb shell monkey -p packagename -v -v -v --pct-trackball 0 -s 500 --ignore-crashes --ignor-timeouts 99999``
 
 与其它应用的影响：
-- ``adb shell monkey -p packagename1 -p packagename1 -v -v -v --pct-trackball 0 -s 500 --ignore-crashes --ignor-timeouts 99999``
+- ``adb shell monkey -p packagename1 -p packagename1 -v -v -v --pct-appswitch 10 --pct-trackball 0 -s 500 --ignore-crashes --ignor-timeouts 99999``
 
 - **MonkeyRunner**
 ###编写一条MonkeyRunner的测试用例，可以用原生的坐标API，也可以用扩展的ID定位的API
-*扩展ID未完成
 
-执行结果如下：
+坐标脚本执行结果如下：
 ![image](https://raw.githubusercontent.com/TestSix/yuwei/master/homework02/rmtest.PNG)
 
 参考：
 https://testerhome.com/topics/878
+
+ID脚本执行结果如下：
+![image](https://raw.githubusercontent.com/TestSix/yuwei/master/homework02/rmtestid.PNG)
+
+注：ID脚本只能在虚拟机上运行，因为需要调用hierarchyviewer，而大部分真机不支持hierarchyviewer。
+
+参考：
+http://www.51testing.com/html/30/n-848530.html
 
 - **iOS Monkey**
 
