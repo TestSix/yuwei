@@ -3,17 +3,17 @@ Charles证书的安装：
 只需要在Charles官网下载，然后双击安装即可，注意修改成‘始终信任’
 
 http的抓包结果如下：
-![image](https://github.com/TestSix/yuwei/blob/master/homework03/http1.PNG)
-![image](https://github.com/TestSix/yuwei/blob/master/homework03/http2.PNG)
-![image](https://github.com/TestSix/yuwei/blob/master/homework03/http3.PNG)
+![image](https://github.com/TestSix/yuwei/blob/master/homework03/http1.png)
+![image](https://github.com/TestSix/yuwei/blob/master/homework03/http2.png)
+![image](https://github.com/TestSix/yuwei/blob/master/homework03/http3.png)
 http的包可以看到request和response的内容。
 
 https的抓包结果如下：
-![image](https://github.com/TestSix/yuwei/blob/master/homework03/https1.PNG)
-![image](https://github.com/TestSix/yuwei/blob/master/homework03/https2.PNG)
-![image](https://github.com/TestSix/yuwei/blob/master/homework03/https3.PNG)
-![image](https://github.com/TestSix/yuwei/blob/master/homework03/https4.PNG)
-![image](https://github.com/TestSix/yuwei/blob/master/homework03/crtinstall.PNG)
+![image](https://github.com/TestSix/yuwei/blob/master/homework03/https1.png)
+![image](https://github.com/TestSix/yuwei/blob/master/homework03/https2.png)
+![image](https://github.com/TestSix/yuwei/blob/master/homework03/https3.png)
+![image](https://github.com/TestSix/yuwei/blob/master/homework03/https4.png)
+![image](https://github.com/TestSix/yuwei/blob/master/homework03/crtinstall.png)
 https的包则显示unknown，有request内容，但没有response内容。
 
 由于公司没有https的代理服务器，没有完成对应被测应用的证书抓取。
