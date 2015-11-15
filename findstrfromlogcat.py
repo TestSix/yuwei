@@ -8,29 +8,40 @@ import linecache
 
 logcatfilepath = os.path.split(os.path.realpath(__file__))[0]
 logcatname=logcatfilepath+'\\logcat.log'
+fileall=linecache.getlines(logcatname)
 #1.获取文件行号
-def filerowsum(logname):
-	rowsum=len(open(logcatname,'rU').readlines())
-	return rowsum
+#...
+
+rowsum = 0
+thefile = open(logcatname, 'rb')
+while True:
+    buffer = thefile.read(8192*1024)
+    if not buffer:
+        break
+    rowsum += buffer.count('\n')
+thefile.close( )
+#	return rowsum
+#...
+
 #2.查找每一行是否有字符
 def seachstr(strname,rownum):
 	str1= linecache.getline(logcatname,rownum)
-	
-	if str1.find(strname)!=null :
-		print('True')
+
+	if str1.find(strname)!=None :
+#		print('True')
 		return True
 	else :
-		print('False')
+#		print('False')
 		return False
 #3.循环查找，然后打印某行
-#str1=input()
-str1='activity'
+
+str1='Activity'
 n=0
-rSum=filerowsum(logcatname)
-while n<rSum:
+
+while n<rowsum:
 	count = linecache.getline(logcatname,n)
-	print count
+#	print count
 	if seachstr(str1,n)==True:
-		print n
+#		print n
 		print count
 	n=n+1
