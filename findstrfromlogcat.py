@@ -25,14 +25,14 @@ thefile.close( )
 
 #2.查找每一行是否有字符
 def seachstr(strname,rownum):
-	str1= linecache.getline(logcatname,rownum)
+	str0= linecache.getline(logcatname,rownum)
 
-	if str1.find(strname)!=None :
+	if str0.find(strname)== -1 :
 #		print('True')
-		return True
+		return False
 	else :
 #		print('False')
-		return False
+		return True
 #3.循环查找，然后打印某行
 
 str1='Activity'
