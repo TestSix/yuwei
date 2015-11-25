@@ -6,9 +6,6 @@ import datetime,time
 import linecache
 
 # 调用adb logcat，按时间命名，写入.log文件
-#resultPath = os.path.join(readConfig.prjDir, "result")
-#        logPath = os.path.join(resultPath, (time.strftime('%Y%m%d%H%M%S', time.localtime()))
-
 logpath=os.path.split(os.path.realpath(__file__))[0]
 print(logpath)		
 logname=time.strftime('%Y%m%d%H%M%S', time.localtime())+'.log'
